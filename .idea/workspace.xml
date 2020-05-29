@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9723d9e6-db87-4af4-aa17-5d8529c5ef26" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JupyterTrust" id="e305226b-f45c-4d3f-b244-ce9f0c829a96" />
+  <component name="ProjectId" id="1ZgCHKtwWCLhlx5OcNOALQ9m1N5" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="terminal" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\san_j\Documents\Projects\app_datos\app\templates" />
+      <recent name="C:\Users\san_j\Documents\Projects\app_datos\app" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\san_j\Documents\Projects\Logistica\app_datos_flask" />
+      <recent name="C:\Users\san_j\Documents\Projects\Logistica\app_datos_flask\app\templates" />
+      <recent name="C:\Users\san_j\Documents\Projects\Logistica\app_datos_flask\app\static" />
+      <recent name="C:\Users\san_j\Documents\Projects\Logistica\app_datos_flask\app\static\css" />
+      <recent name="C:\Users\san_j\Documents\Projects\app_datos" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.borrar">
+    <configuration name="app_datos" type="PythonConfigurationType" factoryName="Python">
+      <module name="app_datos" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app/__init__.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="borrar" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="app_datos" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/borrar.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Flask" type="Python.FlaskServer" nameIsGenerated="true">
+      <module name="app_datos" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="C:\Users\san_j\miniconda3\envs\web_flask\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.borrar" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9723d9e6-db87-4af4-aa17-5d8529c5ef26" name="Default Changelist" comment="" />
+      <created>1585251260973</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1585251260973</updated>
+      <workItem from="1585251264781" duration="480000" />
+      <workItem from="1585465788254" duration="412000" />
+      <workItem from="1585504427509" duration="27440000" />
+      <workItem from="1585583625350" duration="9556000" />
+      <workItem from="1585678589339" duration="23258000" />
+      <workItem from="1585773843433" duration="2031000" />
+      <workItem from="1585851907684" duration="3476000" />
+      <workItem from="1585871408489" duration="1279000" />
+      <workItem from="1586213145627" duration="11757000" />
+      <workItem from="1586393650619" duration="2574000" />
+      <workItem from="1586475227047" duration="1556000" />
+      <workItem from="1586480832001" duration="14476000" />
+      <workItem from="1586539929848" duration="15597000" />
+      <workItem from="1586568977056" duration="276000" />
+      <workItem from="1586569371224" duration="648000" />
+      <workItem from="1586786658147" duration="1875000" />
+      <workItem from="1587140300836" duration="64000" />
+      <workItem from="1587146607041" duration="3150000" />
+      <workItem from="1588016319488" duration="3062000" />
+      <workItem from="1588190328226" duration="1487000" />
+      <workItem from="1588795474442" duration="1945000" />
+      <workItem from="1590622503606" duration="245000" />
+      <workItem from="1590634512691" duration="12463000" />
+      <workItem from="1590688845785" duration="28346000" />
+      <workItem from="1590762559711" duration="1447000" />
+      <workItem from="1590765291885" duration="1555000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="275" y="22" key="#Deployment" timestamp="1590730164775">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="22" key="#Deployment/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1590730164775" />
+    <state x="309" y="42" key="#Inspections" timestamp="1590724605043">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="309" y="42" key="#Inspections/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1590724605043" />
+    <state x="137" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585512192275">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="137" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1585512192275" />
+    <state x="439" y="167" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1590711705053">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="439" y="167" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1590711705053" />
+    <state x="439" y="167" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1585856291989" />
+    <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1586486595634">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1586397176570" />
+    <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1586486595634" />
+    <state x="417" y="126" key="EnvironmentVariablesDialog" timestamp="1585504885121">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="417" y="126" key="EnvironmentVariablesDialog/0.0.1366.728@0.0.1366.728" timestamp="1585504885121" />
+    <state x="577" y="105" key="FileChooserDialogImpl" timestamp="1590622734354">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="577" y="105" key="FileChooserDialogImpl/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1590622734354" />
+    <state x="577" y="105" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1588029401517" />
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1590647086337">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1590647086337" />
+    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1590647086337">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1590647086337" />
+    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1590647086336">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1590647086336" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1590647086337">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1590647086337" />
+    <state x="184" y="7" key="SettingsEditor" timestamp="1585505025972">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="184" y="7" key="SettingsEditor/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1585251718888" />
+    <state x="184" y="7" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1585505025972" />
+    <state x="379" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1587140303154">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="379" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1587140303154" />
+    <state x="379" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1586786659704" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/app_datos_flask$borrar.coverage" NAME="borrar Coverage Results" MODIFIED="1590642439219" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/app_datos$borrar.coverage" NAME="borrar Coverage Results" MODIFIED="1586484081194" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/app_datos$Flask.coverage" NAME="Flask Coverage Results" MODIFIED="1585512277150" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+  </component>
+</project>

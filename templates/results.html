@@ -168,9 +168,9 @@
                         <div class="chart" id="bargraph2">
                             <script>
                                 var graphs = {{dia_semana | safe}};
-                                Plotly.plot('bargraph2',graphs,{title:"Unidades / día",
-                                                                xaxis:{'title':'Fecha'},
-                                                                yaxis:{'title':'Cantidad unidades'}});
+                                Plotly.plot('bargraph2',graphs,{title:"Unidades promedio / día",
+                                                                xaxis:{'title':'Día'},
+                                                                yaxis:{'title':'Promedio unidades'}});
                             </script>
                         </div>
                     {#        <canvas id="myBarChart" width="853" height="341" class="chartjs-render-monitor" style="display: block; width: 853px; height: 341px;"></canvas>#}
