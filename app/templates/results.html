@@ -1,0 +1,231 @@
+{% extends 'base.html' %}
+
+{#{% import 'macros.html' as macros %}#}
+{% import 'metodologia.html' as metodologia %}
+{#{% import 'bootstrap/wtf.html' as wtf %}#}
+{##}
+{#{% block title %} Resultados{% endblock %}#}
+{#{% block content %}#}
+{##}
+{#   Unidades dia #}
+{#    <div class="container" >#}
+{#        <h1> UNIDADES DIA </h1>#}
+{##}
+{#        {{ unidades_tabla|safe }}#}
+{##}
+{#        <div class="chart" id="bargraph">#}
+{#            <script>#}
+{#                var graphs = {{unidades_plot | safe}};#}
+{#                Plotly.plot('bargraph',graphs,{title:"Unidades / día",#}
+{#                                                xaxis:{'title':'Fecha'},#}
+{#                                                yaxis:{'title':'Cantidad unidades'}});#}
+{#            </script>#}
+{#        </div>#}
+{##}
+{#    </div>#}
+{##}
+    {#   Tabla resumen #}
+{#    <div class="container" >#}
+{#        <h1> RESUMEN </h1>#}
+{#            {{ tabla_resumen |safe }}#}
+{#    </div>#}
+{##}
+{##}
+{#    <div class="container" >#}
+{#        <h1> METODOLOGÍA </h1>#}
+{##}
+{#        {{ metodologia }}#}
+{##}
+{#        <p> La metodología sugerida es: <b>{{ metodologia_sugerida }}</b></p>#}
+{##}
+{#    </div>#}
+{#    <div class="container" >#}
+{#        <h1> CLIENTES  </h1>#}
+{#        {{ resumen_clientes |safe }}#}
+{##}
+{#    </div>#}
+{##}
+{##}
+    {#   Lineas dia #}
+{#    <div class="container" >#}
+{#        <h1> GRAFICOS  </h1>#}
+{##}
+{#        <div class="chart" id="bargraph2">#}
+{#            <script>#}
+{#                var graphs = {{lineas_plot | safe}};#}
+{#                Plotly.plot('bargraph2',graphs,{title:"Líneas / día",#}
+{#                                                xaxis:{'title':'Fecha'},#}
+{#                                                yaxis:{'title':'Cantidad unidades'}});#}
+{#            </script>#}
+{#        </div>#}
+{##}
+{#        <div class="chart" id="bargraph3">#}
+{#            <script>#}
+{#                var graphs = {{sku_plot | safe}};#}
+{#                Plotly.plot('bargraph3',graphs,{title:"SKU / día",#}
+{#                                                xaxis:{'title':'Fecha'},#}
+{#                                                yaxis:{'title':'Cantidad unidades'}});#}
+{#            </script>#}
+{#        </div>#}
+{##}
+{#        <div class="chart" id="bargraph4">#}
+{#            <script>#}
+{#                var graphs = {{clientes_plot | safe}};#}
+{#                Plotly.plot('bargraph4',graphs,{title:"Clientes / día",#}
+{#                                                xaxis:{'title':'Fecha'},#}
+{#                                                yaxis:{'title':'Cantidad unidades'}});#}
+{#            </script>#}
+{#        </div>#}
+{##}
+{#        <div class="chart" id="bargraph5">#}
+{#            <script>#}
+{#                var graphs = {{pedidos_plot | safe}};#}
+{#                Plotly.plot('bargraph5',graphs,{title:"Pedidos / día",#}
+{#                                                xaxis:{'title':'Fecha'},#}
+{#                                                yaxis:{'title':'Cantidad unidades'}});#}
+{#            </script>#}
+{#        </div>#}
+{#    </div>#}
+{##}
+{#{% endblock %}#}
+
+{% block result %}
+    <ol class="breadcrumb mb-4">
+        <li class="breadcrumb-item active">Promedios</li>
+    </ol>
+    <div class="row">
+        <div class="col-xl-3 col-md-6">
+            <div class="card bg-primary text-white mb-4" style="opacity: 0.8">
+                <div class="card-body" ><h5>Unidades día</h5> <h1>{{ media_unidades }}</h1></div>
+            </div>
+        </div>
+        <div class="col-xl-3 col-md-6">
+            <div class="card bg-warning text-white mb-4" style="opacity: 0.8">
+                <div class="card-body"><h5>Lineas día</h5> <h1>{{ media_lineas }}</h1></div>
+
+            </div>
+        </div>
+        <div class="col-xl-3 col-md-6">
+            <div class="card bg-success text-white mb-4" style="opacity: 0.8">
+                <div class="card-body"><h5>SKU día</h5> <h1>{{ media_sku }}</h1></div>
+
+            </div>
+        </div>
+        <div class="col-xl-3 col-md-6">
+            <div class="card bg-danger text-white mb-4" style="opacity: 0.8">
+                <div class="card-body"><h5>Clientes día</h5> <h1>{{ media_clientes }}</h1></div>
+
+            </div>
+        </div>
+    </div>
+
+{#    grafico unidades#}
+    <div class="row">
+        <div class="col-xl-7">
+            <div class="card mb-4">
+                <div class="card-header">Unidades día</div>
+                    <div class="card-body">
+                        <div class="chartjs-size-monitor">
+                            <div class="chartjs-size-monitor-expand">
+                                <div class="">
+
+                                </div>
+                            </div>
+                            <div class="chartjs-size-monitor-shrink">
+                                <div class="">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chart" id="bargraph">
+                            <script>
+                                var graphs = {{unidades_plot | safe}};
+                                Plotly.plot('bargraph',graphs,{title:"Unidades / día",
+                                                                xaxis:{'title':'Fecha'},
+                                                                yaxis:{'title':'Cantidad unidades'}});
+                            </script>
+                        </div>
+                    {#        <canvas id="myBarChart" width="853" height="341" class="chartjs-render-monitor" style="display: block; width: 853px; height: 341px;"></canvas>#}
+                    </div>
+            </div>
+        </div>
+        <div class="col-xl-5">
+            <div class="card mb-4">
+                <div class="card-header">Promedio día semana</div>
+                    <div class="card-body">
+                        <div class="chartjs-size-monitor">
+                            <div class="chartjs-size-monitor-expand">
+                                <div class="">
+
+                                </div>
+                            </div>
+                            <div class="chartjs-size-monitor-shrink">
+                                <div class="">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chart" id="bargraph2">
+                            <script>
+                                var graphs = {{dia_semana | safe}};
+                                Plotly.plot('bargraph2',graphs,{title:"Unidades / día",
+                                                                xaxis:{'title':'Fecha'},
+                                                                yaxis:{'title':'Cantidad unidades'}});
+                            </script>
+                        </div>
+                    {#        <canvas id="myBarChart" width="853" height="341" class="chartjs-render-monitor" style="display: block; width: 853px; height: 341px;"></canvas>#}
+                    </div>
+                    </div>
+        </div>
+    </div>
+
+    <div class="card mb-4">
+        <div class="card-header">Overview</div>
+            <div class="card-body">
+                <div class="chartjs-size-monitor">
+                    <div class="chartjs-size-monitor-expand">
+                        <div class="">
+
+                        </div>
+                    </div>
+                    <div class="chartjs-size-monitor-shrink">
+                        <div class="">
+
+                        </div>
+                    </div>
+                </div>
+                {{ tabla_resumen |safe }}
+            {#        <canvas id="myBarChart" width="853" height="341" class="chartjs-render-monitor" style="display: block; width: 853px; height: 341px;"></canvas>#}
+            </div>
+        </div>
+
+    <ol class="breadcrumb mb-4">
+        <li class="breadcrumb-item active">Metodología</li>
+    </ol>
+
+    {{ metodologia }}
+
+    <div class="card mb-4">
+        <div class="card-header">Resumen clientes</div>
+            <div class="card-body">
+                <div class="chartjs-size-monitor">
+                    <div class="chartjs-size-monitor-expand">
+                        <div class="">
+
+                        </div>
+                    </div>
+                    <div class="chartjs-size-monitor-shrink">
+                        <div class="">
+
+                        </div>
+                    </div>
+                </div>
+                {{ resumen_clientes |safe }}
+            {#        <canvas id="myBarChart" width="853" height="341" class="chartjs-render-monitor" style="display: block; width: 853px; height: 341px;"></canvas>#}
+            </div>
+        </div>
+
+
+
+
+{% endblock %}

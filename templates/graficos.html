@@ -1,0 +1,260 @@
+{% extends 'base.html' %}
+
+{#{% import 'macros.html' as macros %}#}
+{% import 'metodologia.html' as metodologia %}
+{#{% import 'bootstrap/wtf.html' as wtf %}#}
+{##}
+{#{% block title %} Resultados{% endblock %}#}
+{#{% block content %}#}
+{##}
+{#   Unidades dia #}
+{#    <div class="container" >#}
+{#        <h1> UNIDADES DIA </h1>#}
+{##}
+{#        {{ unidades_tabla|safe }}#}
+{##}
+{#        <div class="chart" id="bargraph">#}
+{#            <script>#}
+{#                var graphs = {{unidades_plot | safe}};#}
+{#                Plotly.plot('bargraph',graphs,{title:"Unidades / día",#}
+{#                                                xaxis:{'title':'Fecha'},#}
+{#                                                yaxis:{'title':'Cantidad unidades'}});#}
+{#            </script>#}
+{#        </div>#}
+{##}
+{#    </div>#}
+{##}
+    {#   Tabla resumen #}
+{#    <div class="container" >#}
+{#        <h1> RESUMEN </h1>#}
+{#            {{ tabla_resumen |safe }}#}
+{#    </div>#}
+{##}
+{##}
+{#    <div class="container" >#}
+{#        <h1> METODOLOGÍA </h1>#}
+{##}
+{#        {{ metodologia }}#}
+{##}
+{#        <p> La metodología sugerida es: <b>{{ metodologia_sugerida }}</b></p>#}
+{##}
+{#    </div>#}
+{#    <div class="container" >#}
+{#        <h1> CLIENTES  </h1>#}
+{#        {{ resumen_clientes |safe }}#}
+{##}
+{#    </div>#}
+{##}
+{##}
+    {#   Lineas dia #}
+{#    <div class="container" >#}
+{#        <h1> GRAFICOS  </h1>#}
+{##}
+{#        <div class="chart" id="bargraph2">#}
+{#            <script>#}
+{#                var graphs = {{lineas_plot | safe}};#}
+{#                Plotly.plot('bargraph2',graphs,{title:"Líneas / día",#}
+{#                                                xaxis:{'title':'Fecha'},#}
+{#                                                yaxis:{'title':'Cantidad unidades'}});#}
+{#            </script>#}
+{#        </div>#}
+{##}
+{#        <div class="chart" id="bargraph3">#}
+{#            <script>#}
+{#                var graphs = {{sku_plot | safe}};#}
+{#                Plotly.plot('bargraph3',graphs,{title:"SKU / día",#}
+{#                                                xaxis:{'title':'Fecha'},#}
+{#                                                yaxis:{'title':'Cantidad unidades'}});#}
+{#            </script>#}
+{#        </div>#}
+{##}
+{#        <div class="chart" id="bargraph4">#}
+{#            <script>#}
+{#                var graphs = {{clientes_plot | safe}};#}
+{#                Plotly.plot('bargraph4',graphs,{title:"Clientes / día",#}
+{#                                                xaxis:{'title':'Fecha'},#}
+{#                                                yaxis:{'title':'Cantidad unidades'}});#}
+{#            </script>#}
+{#        </div>#}
+{##}
+{#        <div class="chart" id="bargraph5">#}
+{#            <script>#}
+{#                var graphs = {{pedidos_plot | safe}};#}
+{#                Plotly.plot('bargraph5',graphs,{title:"Pedidos / día",#}
+{#                                                xaxis:{'title':'Fecha'},#}
+{#                                                yaxis:{'title':'Cantidad unidades'}});#}
+{#            </script>#}
+{#        </div>#}
+{#    </div>#}
+{##}
+{#{% endblock %}#}
+
+{% block result %}
+
+{#--------------UNIDADES-----------------#}
+    <div class="card mb-4">
+        <div class="card-header">Unidades día</div>
+            <div class="card-body">
+                <div class="chartjs-size-monitor">
+                    <div class="chartjs-size-monitor-expand">
+                        <div class="">
+
+                        </div>
+                    </div>
+                    <div class="chartjs-size-monitor-shrink">
+                        <div class="">
+
+                        </div>
+                    </div>
+                </div>
+
+                {{ unidades_tabla|safe }}
+
+                <div class="chart" id="bargraph">
+                    <script>
+                        var graphs = {{unidades_plot | safe}};
+                        Plotly.plot('bargraph',graphs,{title:"Unidades / día",
+                                                        xaxis:{'title':'Fecha'},
+                                                        yaxis:{'title':'Cantidad unidades'}});
+                    </script>
+                </div>
+            </div>
+        </div>
+
+    <br>
+{#------------LINEAS-------------------#}
+
+    <div class="card mb-4">
+        <div class="card-header">LINEAS DÍA</div>
+            <div class="card-body">
+                <div class="chartjs-size-monitor">
+                    <div class="chartjs-size-monitor-expand">
+                        <div class="">
+
+                        </div>
+                    </div>
+                    <div class="chartjs-size-monitor-shrink">
+                        <div class="">
+
+                        </div>
+                    </div>
+                </div>
+
+                {{ lineas_tabla|safe }}
+
+                <div class="chart" id="bargraph2">
+                    <script>
+                        var graphs = {{lineas_plot | safe}};
+                        Plotly.plot('bargraph2',graphs,{title:"Unidades / día",
+                                                        xaxis:{'title':'Fecha'},
+                                                        yaxis:{'title':'Cantidad unidades'}});
+                    </script>
+                </div>
+            </div>
+        </div>
+
+{#-------------------------------#}
+    <br>
+{#------------SKU-------------------#}
+
+    <div class="card mb-4">
+        <div class="card-header">SKU DÍA</div>
+            <div class="card-body">
+                <div class="chartjs-size-monitor">
+                    <div class="chartjs-size-monitor-expand">
+                        <div class="">
+
+                        </div>
+                    </div>
+                    <div class="chartjs-size-monitor-shrink">
+                        <div class="">
+
+                        </div>
+                    </div>
+                </div>
+
+                {{ sku_tabla|safe }}
+
+                <div class="chart" id="bargraph3">
+                    <script>
+                        var graphs = {{sku_plot | safe}};
+                        Plotly.plot('bargraph3',graphs,{title:"Unidades / día",
+                                                        xaxis:{'title':'Fecha'},
+                                                        yaxis:{'title':'Cantidad unidades'}});
+                    </script>
+                </div>
+            </div>
+        </div>
+
+{#-------------------------------#}
+
+    <br>
+{#------------CLIENTES-------------------#}
+
+    <div class="card mb-4">
+        <div class="card-header">CLIENTES DÍA</div>
+            <div class="card-body">
+                <div class="chartjs-size-monitor">
+                    <div class="chartjs-size-monitor-expand">
+                        <div class="">
+
+                        </div>
+                    </div>
+                    <div class="chartjs-size-monitor-shrink">
+                        <div class="">
+
+                        </div>
+                    </div>
+                </div>
+
+                {{ clientes_tabla|safe }}
+
+                <div class="chart" id="bargraph4">
+                    <script>
+                        var graphs = {{clientes_plot | safe}};
+                        Plotly.plot('bargraph4',graphs,{title:"Unidades / día",
+                                                        xaxis:{'title':'Fecha'},
+                                                        yaxis:{'title':'Cantidad unidades'}});
+                    </script>
+                </div>
+            </div>
+        </div>
+
+{#-------------------------------#}
+
+    <br>
+{#------------PEDIDOS-------------------#}
+
+    <div class="card mb-4">
+        <div class="card-header">PEDIDOS DÍA</div>
+            <div class="card-body">
+                <div class="chartjs-size-monitor">
+                    <div class="chartjs-size-monitor-expand">
+                        <div class="">
+
+                        </div>
+                    </div>
+                    <div class="chartjs-size-monitor-shrink">
+                        <div class="">
+
+                        </div>
+                    </div>
+                </div>
+
+                {{ pedidos_tabla|safe }}
+
+                <div class="chart" id="bargraph5">
+                    <script>
+                        var graphs = {{pedidos_plot | safe}};
+                        Plotly.plot('bargraph5',graphs,{title:"Unidades / día",
+                                                        xaxis:{'title':'Fecha'},
+                                                        yaxis:{'title':'Cantidad unidades'}});
+                    </script>
+                </div>
+            </div>
+        </div>
+
+{#-------------------------------#}
+
+
+{% endblock %}
