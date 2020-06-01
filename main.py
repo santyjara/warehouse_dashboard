@@ -325,4 +325,4 @@ def graficos():
 if __name__ == '__main__':
     #app.config['ENV'] = 'production'
     app.secret_key = 'super secret key'
-    app.run(debug=True)
+    app.run(debug=False)
